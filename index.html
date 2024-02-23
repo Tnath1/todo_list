@@ -7,7 +7,44 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <h3>Hello </h3>
+    <main class="main">
+      
+        <div class="container">
+          <!-- main header -->
+          <div class="header-container">
+            <h2>Your <span class="span-head">TODO'S</span></h2>
+          </div>
+          <!-- Input field and button -->
+          <div class="input-btn">
+            <input type="text" id="input-field" />
+            <button type="button">
+              <img src="icons/plus.png" alt="add btn" />
+            </button>
+          </div>
+          <!-- the list Items -->
+          <div class="todos-container">
+            <div class="todo-item-container">
+              <p id="todo-text">my item</p>
+              <button type="button">
+                <img src="icons/image-editing.png" alt="edit" />
+              </button>
+              <button type="button">
+                <img src="icons/trash.png" alt="delete" />
+              </button>
+            </div>
+            <div class="todo-item-container">
+              <p id="todo-text">my item</p>
+              <button type="button">
+                <img src="icons/image-editing.png" alt="edit" />
+              </button>
+              <button type="button">
+                <img src="icons/trash.png" alt="delete" />
+              </button>
+            </div>
+          </div>
+        </div>
+      
+    </main>
     <!-- JAVASCRIPT -->
     <script src="script/app.js"></script>
   </body>
