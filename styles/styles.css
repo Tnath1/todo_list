@@ -28,7 +28,7 @@ body {
 }
 
 div.container div.header-container {
-  border: 1px solid black;
+  border: 1px solid rgb(98, 77, 173);
   display: flex;
   height: 150px;
   justify-content: center;
@@ -42,7 +42,6 @@ div.container div.header-container {
 
 div.container div.header-container div.circle {
   background-color: rgb(98, 77, 173);
-
   height: 8rem;
   width: 8rem;
   border-radius: 50%;
