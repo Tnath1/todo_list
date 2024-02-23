@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(to top right, rgb(255, 107, 22), rgb(75, 0, 214));
+  background: linear-gradient(to top right, rgb(231, 105, 66), rgb(44, 0, 202));
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -15,8 +15,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
-} 
+}
+
+.container {
+  background-color: #fff;
+}
 
 div.input-btn button img {
   height: 20px;
