@@ -24,6 +24,7 @@ body {
   width: 500px;
   height: 700px;
   border-radius: 10px;
+  opacity: 0.8;
 }
 
 div.container div.header-container {
@@ -86,10 +87,48 @@ div.input-btn button img {
 }
 
 div.input-btn button {
-  background-color: blueviolet;
+  /* background-color: rgb(204, 96, 24); */
+  background: linear-gradient(to top right, rgb(231, 105, 66), rgb(44, 0, 202));
   width: 3.5rem;
   cursor: pointer;
   border-radius: 5px;
+  border: none;
+  transition: fill 2s ease;
+}
+
+/* div.input-btn button:hover{
+  background-color:  rgb(168, 57, 20);
+  
+} */
+
+/* List Items added */
+
+div.todos-container div.todo-item-container {
+  display: flex;
+  /* border: 1px solid black; */
+  border-bottom: 3px solid rgb(199, 144, 127);
+  padding: 10px 10px 0 10px;
+  /* gap: 20rem; */
+  /* margin: 5px; */
+  margin: 10px 20px 0 20px;
+}
+
+div.todos-container div.todo-item-container #todo-text {
+  width: 100%;
+}
+
+div.todos-container div.todo-item-container div.btn-container {
+  display: flex;
+  gap: 18px;
+  padding: 5px;
+  border: 1px solid rgb(98, 77, 173);
+  border-radius: 5px;
+  /* width: 7rem; */
+  justify-content: center;
+}
+
+div.todos-container div.todo-item-container div.btn-container button img {
+  cursor: pointer;
 }
 
 div .todo-item-container button img {
