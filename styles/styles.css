@@ -114,6 +114,12 @@ div.todos-container div.todo-item-container {
 
 div.todos-container div.todo-item-container #todo-text {
   width: 100%;
+  user-select: none;
+}
+
+.line-through {
+  /* text-decoration: line-through; */
+  color: rgb(197, 49, 49);
 }
 
 div.todos-container div.todo-item-container div.btn-container {
