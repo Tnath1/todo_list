@@ -56,5 +56,11 @@ addButton.addEventListener("click", () => {
   btnContainer.appendChild(deletebtn);
   todoItemContainer.appendChild(btnContainer);
 
+  //   deleting functionality
+  deletebtn.addEventListener("click", () => {
+    const parent = btnContainer.parentElement;
+    parent.parentElement.removeChild(parent);
+  });
+
   textInput.value = "";
 });

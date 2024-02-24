@@ -25,6 +25,7 @@ body {
   height: 700px;
   border-radius: 10px;
   opacity: 0.8;
+  overflow: auto;
 }
 
 div.container div.header-container {
@@ -56,6 +57,7 @@ div.container div.header-container h2 {
 
 div.container div.header-container h2 span {
   color: rgb(98, 77, 173);
+  animation: blink 2.5s infinite;
 }
 
 div.container div.header-container div.circle p {
@@ -69,6 +71,20 @@ div.container div.input-btn {
   margin: 1rem;
   gap: 1rem;
 }
+
+/* Define a CSS animation for blinking applies in span above */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 div.container div.input-btn input.ifield {
   width: 80%;
@@ -93,6 +109,9 @@ div.input-btn button {
   border-radius: 5px;
   border: none;
   transition: fill 2s ease;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
 }
 
 /* div.input-btn button:hover{
@@ -139,4 +158,15 @@ div.todos-container div.todo-item-container div.btn-container button img {
 div .todo-item-container button img {
   height: 20px;
   width: 20px;
+}
+
+/* scroll bar */
+.container::-webkit-scrollbar {
+  width: 5px;
+  /* height: 100px; */
+}
+
+/* Track (background) */
+.container::-webkit-scrollbar-track {
+  background: rgb(231, 105, 66);
 }
