@@ -13,6 +13,15 @@ addButton.addEventListener("click", () => {
   todoText.innerText = textInput.value;
   todoItemContainer.appendChild(todoText);
 
+  //   Adding a doucle cick mark to the todo list
+
+  //   I will check ont the below later
+
+  //   todoText.addEventListener("dblclick", () => {
+  //     todoText.classList.add("line-through ");
+  //     editbtn.setAttribute("disabled", "disabled");
+  //   });
+
   //   Adding the edit & delete button
 
   const btnContainer = document.createElement("div");
@@ -28,6 +37,13 @@ addButton.addEventListener("click", () => {
   editbtn.appendChild(editimg);
   btnContainer.appendChild(editbtn);
   todoItemContainer.appendChild(btnContainer);
+
+  //   editing functionality
+  editbtn.addEventListener("click", () => {
+    textInput.value = todoText.innerText;
+    const parent = btnContainer.parentElement;
+    parent.parentElement.removeChild(parent);
+  });
 
   //   delete
 
