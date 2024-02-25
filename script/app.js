@@ -2,7 +2,35 @@ const textInput = document.querySelector("#input-field");
 const addButton = document.querySelector("#Add-button");
 const todocontainer = document.querySelector(".todos-container");
 
+function toggleButtonState() {
+  if (textInput.value.trim() <= 0) {
+    addButton.disabled = true;
+  } else {
+    addButton.disabled = false;
+  }
+}
+
+// Add an event listener to the input field to listen for input changes
+textInput.addEventListener("input", toggleButtonState);
+
+// Initial check to set the initial state of the button
+toggleButtonState();
+
 addButton.addEventListener("click", () => {
+  function toggleButtonState() {
+    if (textInput.value.trim() === "") {
+      addButton.disabled = true;
+    } else {
+      addButton.disabled = false;
+    }
+  }
+
+  // Add an event listener to the input field to listen for input changes
+  textInput.addEventListener("input", toggleButtonState);
+
+  // Initial check to set the initial state of the button
+  toggleButtonState();
+
   if (textInput.value.trim().length === 0) return;
 
   const todoItemContainer = document.createElement("div");
@@ -86,5 +114,3 @@ countbtn.addEventListener("click", () => {
   clickCount++;
   updateClickCount();
 });
-
-
