@@ -62,5 +62,29 @@ addButton.addEventListener("click", () => {
     parent.parentElement.removeChild(parent);
   });
 
+  deletebtn.addEventListener("click", () => {
+    clickCount--;
+    updateClickCount();
+  });
+
+  editbtn.addEventListener("click", () => {
+    clickCount--;
+    updateClickCount();
+  });
+
   textInput.value = "";
 });
+
+// Function to update count in UI
+function updateClickCount() {
+  document.getElementById("task-count").innerText = clickCount;
+}
+
+let clickCount = 0;
+const countbtn = document.getElementById("Add-button");
+countbtn.addEventListener("click", () => {
+  clickCount++;
+  updateClickCount();
+});
+
+
